@@ -25,4 +25,5 @@ Route::get('/lien-he', function() {
 });
 
 Route::get('/admin/danhsachsanpham/print', 'Backend\SanPhamController@print')->name('danhsachsanpham.print');
+Route::get('/admin/danhsachsanpham/excel', 'Backend\SanPhamController@excel')->name('danhsachsanpham.excel');
 Route::resource('/admin/danhsachsanpham', 'Backend\SanPhamController');
