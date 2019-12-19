@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,3 +23,6 @@ Route::get('/gioi-thieu', function() {
 Route::get('/lien-he', function() {
     return 'Dia chi <h1>la....</h1>';
 });
+
+Route::get('/admin/danhsachsanpham/print', 'Backend\SanPhamController@print')->name('danhsachsanpham.print');
+Route::resource('/admin/danhsachsanpham', 'Backend\SanPhamController');

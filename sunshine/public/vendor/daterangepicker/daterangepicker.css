@@ -1,0 +1,89 @@
+rue" type="timeSpan" validationType="timeSpanRange" validationParameter="0,2147483647,1" allowInfinite="true" defaultValue="00:00:01" />
+                <attribute name="urgentFlushInterval" required="true" type="timeSpan" allowInfinite="true" defaultValue="00:00:00" />
+                <attribute name="urgentFlushThreshold" required="true" type="int" validationType="integerRange" validationParameter="1,2147483647" allowInfinite="true" defaultValue="2147483647" />
+            </collection>
+        </element>
+        <attribute name="enabled" type="bool" defaultValue="True" />
+        <element name="eventMappings">
+            <collection addElement="add" removeElement="remove" clearElement="clear">
+                <attribute name="endEventCode" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="2147483647" />
+                <attribute name="name" required="true" isUniqueKey="true" type="string" />
+                <attribute name="startEventCode" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="0" />
+                <attribute name="type" required="true" type="string" />
+            </collection>
+        </element>
+        <attribute name="heartbeatInterval" type="timeSpan" validationType="timeSpanRange" validationParameter="0,2147483,1" timeSpanFormat="seconds" defaultValue="0" />
+        <element name="profiles">
+            <collection addElement="add" removeElement="remove" clearElement="clear">
+                <attribute name="custom" type="string" />
+                <attribute name="maxLimit" type="int" validationType="integerRange" validationParameter="0,2147483647" allowInfinite="true" defaultValue="2147483647" />
+                <attribute name="minInstances" type="int" validationType="integerRange" validationParameter="1,2147483647" defaultValue="1" />
+                <attribute name="minInterval" type="timeSpan" allowInfinite="true" defaultValue="00:00:00" />
+                <attribute name="name" required="true" isUniqueKey="true" type="string" validationType="nonEmptyString" />
+            </collection>
+        </element>
+        <element name="providers">
+            <collection addElement="add" removeElement="remove" clearElement="clear" allowUnrecognizedAttributes="true">
+                <attribute name="name" required="true" isUniqueKey="true" type="string" />
+                <attribute name="type" required="true" type="string" />
+            </collection>
+        </element>
+        <element name="rules">
+            <collection addElement="add" removeElement="remove" clearElement="clear">
+                <attribute name="custom" type="string" />
+                <attribute name="eventName" required="true" type="string" />
+                <attribute name="maxLimit" type="int" validationType="integerRange" validationParameter="0,2147483647" allowInfinite="true" defaultValue="2147483647" />
+                <attribute name="minInstances" type="int" validationType="integerRange" validationParameter="1,2147483647" defaultValue="1" />
+                <attribute name="minInterval" type="timeSpan" allowInfinite="true" defaultValue="00:00:00" />
+                <attribute name="name" required="true" isUniqueKey="true" type="string" validationType="nonEmptyString" />
+                <attribute name="profile" type="string" />
+                <attribute name="provider" type="string" />
+            </collection>
+        </element>
+    </sectionSchema>
+    <sectionSchema name="system.web/hostingEnvironment">
+        <attribute name="idleTimeout" type="timeSpan" validationType="timeSpanRange" validationParameter="0,2147483640,60" allowInfinite="true" timeSpanFormat="minutes" defaultValue="Infinite" />
+        <attribute name="shadowCopyBinAssemblies" type="bool" defaultValue="True" />
+        <attribute name="shutdownTimeout" type="timeSpan" validationType="timeSpanRange" validationParameter="0,2147483647,1" timeSpanFormat="seconds" defaultValue="30" />
+    </sectionSchema>
+    <sectionSchema name="system.web/httpCookies">
+        <attribute name="domain" type="string" />
+        <attribute name="httpOnlyCookies" type="bool" defaultValue="False" />
+        <attribute name="requireSSL" type="bool" defaultValue="False" />
+    </sectionSchema>
+    <sectionSchema name="system.web/httpHandlers">
+        <collection addElement="add" removeElement="remove" clearElement="clear" mergeAppend="false" allowDuplicates="true">
+            <attribute name="path" required="true" isCombinedKey="true" type="string" />
+            <attribute name="type" required="true" type="string" />
+            <attribute name="validate" type="bool" defaultValue="True" />
+            <attribute name="verb" required="true" isCombinedKey="true" type="string" />
+        </collection>
+    </sectionSchema>
+    <sectionSchema name="system.web/httpModules">
+        <collection addElement="add" removeElement="remove" clearElement="clear">
+            <attribute name="name" required="true" isUniqueKey="true" type="string" validationType="nonEmptyString" />
+            <attribute name="type" required="true" type="string" />
+        </collection>
+    </sectionSchema>
+    <sectionSchema name="system.web/httpRuntime" allowUnrecognizedAttributes="true">
+        <attribute name="apartmentThreading" type="bool" defaultValue="False" />
+        <attribute name="appRequestQueueLimit" type="int" validationType="integerRange" validationParameter="1,2147483647" defaultValue="5000" />
+        <attribute name="delayNotificationTimeout" type="timeSpan" timeSpanFormat="seconds" defaultValue="5" />
+        <attribute name="enable" type="bool" defaultValue="True" />
+        <attribute name="enableHeaderChecking" type="bool" defaultValue="True" />
+        <attribute name="enableKernelOutputCache" type="bool" defaultValue="True" />
+        <attribute name="enableVersionHeader" type="bool" defaultValue="True" />
+        <attribute name="executionTimeout" type="timeSpan" validationType="timeSpanRange" validationParameter="0,2147483647,1" timeSpanFormat="seconds" defaultValue="110" />
+        <attribute name="maxRequestLength" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="4096" />
+        <attribute name="maxWaitChangeNotification" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="0" />
+        <attribute name="minFreeThreads" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="8" />
+        <attribute name="minLocalRequestFreeThreads" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="4" />
+        <attribute name="requestLengthDiskThreshold" type="int" validationType="integerRange" validationParameter="1,2147483647" defaultValue="80" />
+        <attribute name="requireRootedSaveAsPath" type="bool" defaultValue="True" />
+        <attribute name="sendCacheControlHeader" type="bool" defaultValue="True" />
+        <attribute name="shutdownTimeout" type="timeSpan" timeSpanFormat="seconds" defaultValue="90" />
+        <attribute name="useFullyQualifiedRedirectUrl" type="bool" defaultValue="False" />
+        <attribute name="waitChangeNotification" type="int" validationType="integerRange" validationParameter="0,2147483647" defaultValue="0" />
+        <attribute name="maxUrlLength" type="int" defaultValue="260" />
+        <attribute name="maxQueryStringLength" type="int" defaultValue="2048" />
+        <attribute name="relaxedUrlToFileSystemMapping" type="bool" d

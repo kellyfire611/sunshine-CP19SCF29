@@ -1,0 +1,35 @@
+kr</domain>
+        <domain>pcrevue.sk</domain>
+        <domain>planetradiocity.com</domain>
+        <domain>plaync.co.kr</domain>
+        <domain>plaync.com</domain>
+        <domain>pmang.com</domain>
+        <domain>police.go.kr</domain>
+        <domain>poombuy.com</domain>
+        <domain>pptv.com</domain>
+        <domain exclude="true">pro.01net.com
+            <path>/rub/01net-entreprises/10234/01net-entreprises/videos</path>
+        </domain>
+        <domain>rai.tv</domain>
+        <domain>s.sohu.com</domain>
+        <domain>samsungcard.com</domain>
+        <domain>samsungfire.com</domain>
+        <domain>samsunglife.com</domain>
+        <domain>santandernet.com.br</domain>
+        <domain>sbs.co.kr</domain>
+        <domain>seoul.go.kr</domain>
+        <domain exclude="true">servicios.prodigy.msn.com
+            <path>/ninos</path>
+        </domain>
+        <domain>sharebox.co.kr</domain>
+        <domain>shareholder.com</domain>
+        <domain>shinhancard.com</domain>
+        <domain>shockwave.com</domain>
+        <domain>shop.danawa.com</domain>
+        <domain>showroom.orange.fr</domain>
+        <domain>sky.de</domain>
+        <domain>skygo.sky.it</domain>
+        <domain>skype.daesung.com</domain>
+        <domain>smartmiraeasset.com</domain>
+        <domain>softforum.co.kr</domain>
+   

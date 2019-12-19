@@ -1,0 +1,27 @@
+="15" validationType="integerRange" validationParameter="0,2147483647" />
+        <attribute name="strict" type="bool" defaultValue="False" />
+        <attribute name="tempDirectory" type="string" />
+        <attribute name="urlLinePragmas" type="bool" defaultValue="False" />
+        <attribute name="profileGuidedOptimizations" type="string" defaultValue="All" />
+        <attribute name="optimizeCompilations" type="bool" defaultValue="False" />
+        <attribute name="targetFramework" type="string" />
+        <element name="folderLevelBuildProviders">
+            <collection addElement="add" removeElement="remove" clearElement="clear">
+                <attribute name="name" required="true" isUniqueKey="true" type="string" validationType="nonEmptyString" />
+                <attribute name="type" required="true" isUniqueKey="false" type="string" validationType="nonEmptyString" />
+            </collection>
+        </element>
+    </sectionSchema>
+    <sectionSchema name="system.web/customErrors">
+        <attribute name="allowNestedErrors" type="bool" defaultValue="False" />
+        <attribute name="defaultRedirect" type="string" />
+        <collection addElement="error">
+            <attribute name="redirect" required="true" type="string" validationType="nonEmptyString" />
+            <attribute name="statusCode" required="true" isUniqueKey="true" type="int" validationType="integerRange" validationParameter="100,999" />
+        </collection>
+        <attribute name="mode" type="enum" defaultValue="RemoteOnly">
+            <enum name="RemoteOnly" value="0" />
+            <enum name="On" value="1" />
+            <enum name="Off" value="2" />
+        </attribute>
+        <attribute name="redirectMode" type="string" validationType="nonEmptyString" defaultValue="ResponseRedirect" /

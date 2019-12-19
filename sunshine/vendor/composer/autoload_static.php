@@ -4,19 +4,19 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
+class ComposerStaticInit8a4949cf92cfc2e4a462045fabe6544e
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
     );
@@ -123,8 +123,8 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -341,8 +341,17 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
     );
 
     public static $classMap = array (
+        'App\\Chitietdonhang' => __DIR__ . '/../..' . '/app/Chitietdonhang.php',
+        'App\\Chitietnhap' => __DIR__ . '/../..' . '/app/Chitietnhap.php',
+        'App\\ChuDe' => __DIR__ . '/../..' . '/app/ChuDe.php',
+        'App\\ChudeSanpham' => __DIR__ . '/../..' . '/app/ChudeSanpham.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Donhang' => __DIR__ . '/../..' . '/app/Donhang.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Gopy' => __DIR__ . '/../..' . '/app/Gopy.php',
+        'App\\HinhAnh' => __DIR__ . '/../..' . '/app/HinhAnh.php',
+        'App\\Hoadonle' => __DIR__ . '/../..' . '/app/Hoadonle.php',
+        'App\\Hoadonsi' => __DIR__ . '/../..' . '/app/Hoadonsi.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -354,12 +363,26 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Khachhang' => __DIR__ . '/../..' . '/app/Khachhang.php',
+        'App\\Khuyenmai' => __DIR__ . '/../..' . '/app/Khuyenmai.php',
+        'App\\KhuyenmaiSanpham' => __DIR__ . '/../..' . '/app/KhuyenmaiSanpham.php',
+        'App\\Loai' => __DIR__ . '/../..' . '/app/Loai.php',
+        'App\\Mau' => __DIR__ . '/../..' . '/app/Mau.php',
+        'App\\MauSanpham' => __DIR__ . '/../..' . '/app/MauSanpham.php',
+        'App\\Nhacungcap' => __DIR__ . '/../..' . '/app/Nhacungcap.php',
+        'App\\Nhanvien' => __DIR__ . '/../..' . '/app/Nhanvien.php',
+        'App\\Phieunhap' => __DIR__ . '/../..' . '/app/Phieunhap.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Quyen' => __DIR__ . '/../..' . '/app/Quyen.php',
+        'App\\SanPham' => __DIR__ . '/../..' . '/app/SanPham.php',
+        'App\\Thanhtoan' => __DIR__ . '/../..' . '/app/Thanhtoan.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\Vanchuyen' => __DIR__ . '/../..' . '/app/Vanchuyen.php',
+        'App\\Xuatxu' => __DIR__ . '/../..' . '/app/Xuatxu.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
@@ -369,6 +392,10 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Carbon\\Upgrade' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Upgrade.php',
+        'ChitietdonhangTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChitietdonhangTableSeeder.php',
+        'ChitietnhapTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChitietnhapTableSeeder.php',
+        'ChuDeTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChuDeTableSeeder.php',
+        'ChudeSanphamTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChudeSanphamTableSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',
@@ -411,6 +438,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Doctrine\\Instantiator\\Exception\\UnexpectedValueException' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php',
         'Doctrine\\Instantiator\\Instantiator' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php',
         'Doctrine\\Instantiator\\InstantiatorInterface' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php',
+        'DonhangTableSeeder' => __DIR__ . '/../..' . '/database/seeds/DonhangTableSeeder.php',
         'Dotenv\\Dotenv' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Dotenv.php',
         'Dotenv\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ExceptionInterface.php',
         'Dotenv\\Exception\\InvalidCallbackException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/InvalidCallbackException.php',
@@ -933,6 +961,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'GopyTableSeeder' => __DIR__ . '/../..' . '/database/seeds/GopyTableSeeder.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1001,6 +1030,9 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'HinhanhTableSeeder' => __DIR__ . '/../..' . '/database/seeds/HinhanhTableSeeder.php',
+        'HoadonleTableSeeder' => __DIR__ . '/../..' . '/database/seeds/HoadonleTableSeeder.php',
+        'HoadonsiTableSeeder' => __DIR__ . '/../..' . '/database/seeds/HoadonsiTableSeeder.php',
         'Illuminate\\Auth\\Access\\AuthorizationException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php',
         'Illuminate\\Auth\\Access\\Gate' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/Gate.php',
         'Illuminate\\Auth\\Access\\HandlesAuthorization' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Access/HandlesAuthorization.php',
@@ -1521,6 +1553,11 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Illuminate\\Pagination\\PaginationServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php',
         'Illuminate\\Pagination\\Paginator' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Pagination/Paginator.php',
         'Illuminate\\Pagination\\UrlWindow' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Pagination/UrlWindow.php',
+        'Illuminate\\PhpVnDataGenerator\\VnBase' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnBase.php',
+        'Illuminate\\PhpVnDataGenerator\\VnBigNumber' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnBigNumber.php',
+        'Illuminate\\PhpVnDataGenerator\\VnFullname' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnFullname.php',
+        'Illuminate\\PhpVnDataGenerator\\VnPersonalInfo' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnPersonalInfo.php',
+        'Illuminate\\PhpVnDataGenerator\\VnTest' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnTest.php',
         'Illuminate\\Pipeline\\Hub' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Pipeline/Hub.php',
         'Illuminate\\Pipeline\\Pipeline' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Pipeline/Pipeline.php',
         'Illuminate\\Pipeline\\PipelineServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php',
@@ -1774,6 +1811,9 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'KhachhangTableSeeder' => __DIR__ . '/../..' . '/database/seeds/KhachhangTableSeeder.php',
+        'KhuyenmaiSanphamTableSeeder' => __DIR__ . '/../..' . '/database/seeds/KhuyenmaiSanphamTableSeeder.php',
+        'KhuyenmaiTableSeeder' => __DIR__ . '/../..' . '/database/seeds/KhuyenmaiTableSeeder.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -1824,6 +1864,9 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'LoaiTableSeeder' => __DIR__ . '/../..' . '/database/seeds/LoaiTableSeeder.php',
+        'MauSanphamTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MauSanphamTableSeeder.php',
+        'MauTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MauTableSeeder.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
@@ -2012,6 +2055,8 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Monolog\\ResettableInterface' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ResettableInterface.php',
         'Monolog\\SignalHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/SignalHandler.php',
         'Monolog\\Utils' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Utils.php',
+        'NhacungcapTableSeeder' => __DIR__ . '/../..' . '/database/seeds/NhacungcapTableSeeder.php',
+        'NhanvienTableSeeder' => __DIR__ . '/../..' . '/database/seeds/NhanvienTableSeeder.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',
@@ -2452,6 +2497,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PhieunhapTableSeeder' => __DIR__ . '/../..' . '/database/seeds/PhieunhapTableSeeder.php',
         'PhpParser\\Builder' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Builder.php',
         'PhpParser\\BuilderFactory' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/BuilderFactory.php',
         'PhpParser\\BuilderHelpers' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/BuilderHelpers.php',
@@ -2918,6 +2964,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Psy\\VersionUpdater\\GitHubChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/GitHubChecker.php',
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/NoopChecker.php',
+        'QuyenTableSeeder' => __DIR__ . '/../..' . '/database/seeds/QuyenTableSeeder.php',
         'Ramsey\\Uuid\\BinaryUtils' => __DIR__ . '/..' . '/ramsey/uuid/src/BinaryUtils.php',
         'Ramsey\\Uuid\\Builder\\DefaultUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DefaultUuidBuilder.php',
         'Ramsey\\Uuid\\Builder\\DegradedUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DegradedUuidBuilder.php',
@@ -2964,6 +3011,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'SanphamTableSeeder' => __DIR__ . '/../..' . '/database/seeds/SanphamTableSeeder.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -3627,6 +3675,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'ThanhtoanTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ThanhtoanTableSeeder.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -3646,6 +3695,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'UpdateHelper\\NotUpdateInterfaceInstanceException' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/NotUpdateInterfaceInstanceException.php',
         'UpdateHelper\\UpdateHelper' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelper.php',
         'UpdateHelper\\UpdateHelperInterface' => __DIR__ . '/..' . '/kylekatarnls/update-helper/src/UpdateHelper/UpdateHelperInterface.php',
+        'VanchuyenTableSeeder' => __DIR__ . '/../..' . '/database/seeds/VanchuyenTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
@@ -3666,6 +3716,7 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'XuatxuTableSeeder' => __DIR__ . '/../..' . '/database/seeds/XuatxuTableSeeder.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -3741,11 +3792,11 @@ class ComposerStaticInite4da1eee9d1e25260130e9e60464b909
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite4da1eee9d1e25260130e9e60464b909::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite4da1eee9d1e25260130e9e60464b909::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInite4da1eee9d1e25260130e9e60464b909::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite4da1eee9d1e25260130e9e60464b909::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInite4da1eee9d1e25260130e9e60464b909::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8a4949cf92cfc2e4a462045fabe6544e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8a4949cf92cfc2e4a462045fabe6544e::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit8a4949cf92cfc2e4a462045fabe6544e::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit8a4949cf92cfc2e4a462045fabe6544e::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit8a4949cf92cfc2e4a462045fabe6544e::$classMap;
 
         }, null, ClassLoader::class);
     }
