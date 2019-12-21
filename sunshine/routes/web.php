@@ -24,6 +24,7 @@ Route::get('/lien-he', function() {
     return 'Dia chi <h1>la....</h1>';
 });
 
+// Route chức năng Sản phẩm
 Route::get('/admin/danhsachsanpham/print', 'Backend\SanPhamController@print')->name('danhsachsanpham.print');
 Route::get('/admin/danhsachsanpham/excel', 'Backend\SanPhamController@excel')->name('danhsachsanpham.excel');
 Route::resource('/admin/danhsachsanpham', 'Backend\SanPhamController');

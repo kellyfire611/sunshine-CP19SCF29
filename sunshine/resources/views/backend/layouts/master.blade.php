@@ -18,14 +18,14 @@
   </head>
   <body>
     <!-- Navbar -->
-    @include('backend.layout.partials.navbar')
+    @include('backend.layouts.partials.navbar')
     <!-- End Navbar -->
 
     <!-- Main content -->
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar -->
-            @include('backend.layout.partials.sidebar')
+            @include('backend.layouts.partials.sidebar')
             <!-- End sidebar -->
 
             <!-- Content -->
@@ -34,8 +34,8 @@
                     <h1 class="h2">@yield('feature-title')</h1>
                     <small>@yield('feature-description')</small>
                 </div>
-                @include('backend.layout.partials.error-message')
-                @include('backend.layout.partials.flash-message')
+                @include('backend.layouts.partials.error-message')
+                @include('backend.layouts.partials.flash-message')
                 @yield('content')
             </main>
             <!-- End content -->
