@@ -29,6 +29,9 @@ Danh sách các Sản phẩm có trong Hệ thống. Bạn có thể CRUD!
 -->
 <a href="{{ route('danhsachsanpham.excel') }}" class="btn btn-danger">Xuất Excel</a>
 
+<!-- Tạo nút Xuất PDF danh sách sản phẩm - Theo quy ước, các route đã được đăng ký trong file `web.php` đều phải được đặt tên để dễ dàng bảo trì code sau này. - Đường dẫn URL là đường dẫn được tạo ra bằng route có tên `danhsachsanpham.pdf` - Sẽ có dạng http://tenmiencuaban.com/admin/danhsachsanpham/pdf --> 
+<a href="{{ route('danhsachsanpham.pdf') }}" class="btn btn-primary">Xuất PDF</a>
+
 <table class="table table-striped table-bordered">
     <thead>
         <tr>

@@ -27,4 +27,5 @@ Route::get('/lien-he', function() {
 // Route chức năng Sản phẩm
 Route::get('/admin/danhsachsanpham/print', 'Backend\SanPhamController@print')->name('danhsachsanpham.print');
 Route::get('/admin/danhsachsanpham/excel', 'Backend\SanPhamController@excel')->name('danhsachsanpham.excel');
+Route::get('/admin/danhsachsanpham/pdf', 'Backend\SanPhamController@pdf')->name('danhsachsanpham.pdf');
 Route::resource('/admin/danhsachsanpham', 'Backend\SanPhamController');
