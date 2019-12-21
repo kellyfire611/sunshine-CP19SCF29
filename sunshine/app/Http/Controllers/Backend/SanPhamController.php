@@ -86,7 +86,7 @@ class SanPhamController extends Controller
         $sp->save();
 
         Session::flash('alert-info', 'Them moi thanh cong ^^~!!!');
-        return redirect()->route('backend.sanpham.index');
+        return redirect()->route('danhsachsanpham.index');
     }
 
     /**
@@ -152,7 +152,7 @@ class SanPhamController extends Controller
         $sp->save();
 
         Session::flash('alert-info', 'Cập nhật thành công ^^~!!!');
-        return redirect()->route('backend.sanpham.index');
+        return redirect()->route('danhsachsanpham.index');
     }
 
     /**
@@ -173,16 +173,15 @@ class SanPhamController extends Controller
         $sp->delete();
 
         Session::flash('alert-info', 'Xóa sản phẩm thành công ^^~!!!');
-        return redirect()->route('backend.sanpham.index');
+        return redirect()->route('danhsachsanpham.index');
     }
 
+    /**
+     * Action xuất biểu mẫu IN
+     */
     public function print() {
         $ds_sanpham = Sanpham::all();
         $ds_loai    = Loai::all();
-        // $data = [
-        //     'danhsachsanpham' => $ds_sanpham,
-        //     'danhsachloai'    => $ds_loai,
-        // ];
         
         return view('backend.sanpham.print')
             ->with('danhsachsanpham', $ds_sanpham)
@@ -193,18 +192,17 @@ class SanPhamController extends Controller
         /* Code dành cho việc debug
         - Khi debug cần hiển thị view để xem trước khi Export Excel
         */
-        $ds_sanpham = Sanpham::all();
-        $ds_loai    = Loai::all();
-        $data = [
-            'danhsachsanpham' => $ds_sanpham,
-            'danhsachloai'    => $ds_loai,
-        ];
+        // $ds_sanpham = Sanpham::all();
+        // $ds_loai    = Loai::all();
+        // $data = [
+        //     'danhsachsanpham' => $ds_sanpham,
+        //     'danhsachloai'    => $ds_loai,
+        // ];
+        // return view('backend.sanpham.excel')
+        //     ->with('danhsachsanpham', $ds_sanpham)
+        //     ->with('danhsachloai', $ds_loai);
 
-        return view('backend.sanpham.excel')
-            ->with('danhsachsanpham', $ds_sanpham)
-            ->with('danhsachloai', $ds_loai);
-
-        // return Excel::download(new SanPhamExport, 'danhsachsanpham.xlsx');
+        return Excel::download(new SanPhamExport, 'danhsachsanpham.xlsx');
     }
 
     // /**

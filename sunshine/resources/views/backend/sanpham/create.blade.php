@@ -25,7 +25,7 @@ Thêm mới Sản phẩm. Vui lòng nhập thông tin và bấm Lưu.
 @endsection
 
 @section('content')
-<form method="post" action="{{ route('backend.sanpham.store') }}">
+<form method="post" action="{{ route('danhsachsanpham.store') }}">
     {{ csrf_field() }}
     <div class="form-group">
         <label for="l_ma">Loại sản phẩm</label>
