@@ -29,3 +29,8 @@ Route::get('/admin/danhsachsanpham/print', 'Backend\SanPhamController@print')->n
 Route::get('/admin/danhsachsanpham/excel', 'Backend\SanPhamController@excel')->name('danhsachsanpham.excel');
 Route::get('/admin/danhsachsanpham/pdf', 'Backend\SanPhamController@pdf')->name('danhsachsanpham.pdf');
 Route::resource('/admin/danhsachsanpham', 'Backend\SanPhamController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/admin/activate/{nv_ma}', 'Backend\BackendController@activate')->name('activate');
