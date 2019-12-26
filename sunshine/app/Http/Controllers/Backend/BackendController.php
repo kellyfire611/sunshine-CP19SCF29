@@ -14,6 +14,6 @@ class BackendController extends Controller
         $nv->nv_trangThai = 2; // Khả dụng
         $nv->save();
 
-        return redirect()->route('frontend.home');
+        return redirect()->route('home');
     }
 }
