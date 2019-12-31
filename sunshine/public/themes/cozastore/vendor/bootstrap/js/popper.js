@@ -2328,12 +2328,121 @@ var Popper = function () {
     // Deep merge modifiers options
     this.options.modifiers = {};
     Object.keys(_extends({}, Popper.Defaults.modifiers, options.modifiers)).forEach(function (name) {
-      _this.options.modifiers[name] = _extend‰x AVHƒì H‹ñ¹   I‹èL‹ò¿ €ÿ¾­ H‹ØH…Àt3ÀH‰ë3ÛH…Ût'H‹FL‹ÍL‹ÃI‹ÖH‹ÎH‰è`äÿÿ‹ø…Ày	H‹Ëÿ±­ H‹\$0H‹l$8H‹t$@‹ÇH‹|$HHƒÄ A^ÃÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌH‰\$H‰l$VWAVHƒì@L‹òH‹éè[öÿÿ…ÀtÿÈƒøwb€}@ ”Àë°„ÀtSH‹E0Hƒd$( HL$ H‰D$0HfåşÿÇD$8   H‰D$ ÆD$< è'!  ‹ğ…ÀxHL$ I‹Öè  ‹ğHL$ è   ëEHƒd$p HT$pH‹Íè£îÿÿH‹\$p‹ğ…ÀxI‹ÖH‹Ëèİ  ‹ğH…ÛtH‹H‹xH‹Ïÿ6® H‹Ëÿ×…öyH‹M0I‹ÖèíA  ‹ğH‹\$`H‹l$h‹ÆHƒÄ@A^_^ÃÌÌÌÌÌÌH‰\$H‰t$WHƒì H‹Ù¹H   ÿ7¬ H‹øH…Àt:HãşÿH‰Hƒg Hƒg Hƒg  Hƒg( Hƒg0 ƒg< ÆG ÇG8   fÇG@  ë3ÿH…ÿt=H‹ÏèR   ‹ğ…ÀxH‰;H‹H‹ZH‹Ëÿ}­ H‹ÏÿÓH‹H‹ZH‹Ëÿh­ H‹ÏÿÓë¾ €H‹\$0‹ÆH‹t$8HƒÄ _ÃÌÌÌÌÌÌH‰\$H‰l$H‰t$WHƒì0H‹ù¹€   » €ÿm« 3ö½   H…ÀtQH‰pH>äşÿH‰H‰pH‰p‰p ‰h$H‰p(‰p0@ˆp4‰p8H‰pP‰pXH‰p`fÇ@h‰hlH‰hp‰px‰h|H‰pH‰p@ëH‹ÆH‰G0H…À„•   H‹Èè¤q  ‹Ø…Àˆƒ   H‹O0è¹u  ‹Ø…Àxt¹   ÿÔª H‹ØH…Àt!A¹   E3À3ÒH‹ÈH‰0ÇD$    ğÿ¥¡ ëH‹ŞH‰_(H…Ût/¹   ÿ”ª H…Àt	H‹O(H‰ëH‹ÆH‰G H÷ØÛ÷Óã €ë» €3Éè H…Àt‹ ë‹ÅğÁ} ÅH‹l$HH‹t$P‰G<‹ÃH‹\$@HƒÄ0_ÃÌÌÌÌÌÌÌÌÌH‰\$UVWAVAWHƒì@E3ÿH‹ñH‹IAŠèAŠÇAH…ÉtD8~uH…Ét	D8~u@ŠÇ„ÒAEÇ„À…_  Dˆ|$xD8~A„&  H‹^0Dˆ~ADˆ|$xH‹KA¾
-   H…ÉtƒÊÿÿe¤ ©ÿÿÿtèİÚÿÿ‹ø…ÀxPHT$xH‹Ëèv  ‹ø…Àx.H‹Ëè  A‹Îÿ¨ ¹@ €H…ÀH‰CDù…ÿx
-H‹Ëè0t  ‹øH‹KH…Étÿ³¢ …ÿˆÁ   H‹NE3ÀHD$pH‰D$0APL§ÿÿÇD$(0u  D‰t$ ÿü¦ ¹   ÿ	© L‹ğH…Àt3ÀI‰ëM‹÷M…öt?H‹FD‰|$pI‰H‹H‹X@H‹Ëÿ†ª L‹FLL$pI‹ÖH‹ÎÿÓD9|$pu"I‹Îÿå¨ ë¿ €ëH‹N0HT$xè"u  ‹ø…ÿxD8|$xt@„ít
-3ÒH‹Îè   ‹ÇH‹œ$€   HƒÄ@A_A^_^]ÃÌÌÌÌÌÌÌÌ@SHƒì@H‹Ù„Òt4H‹IE3ÀHD$`H‰D$0APL»ÿÿÇD$(0u  ÇD$ 
-   ÿ¦ ë63ÉèÀ ¹   H…ÀtğÁëğÁĞz ÿÁ3ÒLùÿÿ‰K<Jÿ¥¥ 3ÀHƒÄ@[ÃÌÌÌÌÌÌÌÌÌ@SVWAVAWHìP  H‹îm H3ÄH‰„$@  H‹H‹ùM‹ğH‹XHL‹úH‹ËÿR© L„$0  A¹  º   H‹ÏÿÓ‹ğ…ÀxHI‹>H‹H‹XHH‹Ëÿ!© LD$ A¹  º   H‹ÏÿÓ‹ğ…ÀxHT$ HŒ$0  èŞL …À”ÀAˆI‹>H‹H‹XH‹ËÿÙ¨ H‹ÏÿÓ‹ÆH‹Œ$@  H3Ìè2E HÄP  A_A^_^[ÃÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌ¸   ğÁAlÿÀÃÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌH‰\$H‰t$H‰|$AVHƒì H‹ùƒÎÿğÁqlÿÎ…‚   H…Ét}L‹q(HÈİşÿH‰M…ötI‹H‹H‹Ëÿ1¨ VI‹ÎÿÓL‹w M…ötI‹H‹H‹Ëÿ¨ º   I‹ÎÿÓHO@ÿíŸ L‹w8M…ötI‹H‹ZH‹Ëÿä§ I‹ÎÿÓH‹ÏÿV¦ H‹\$0H‹|$@‹ÆH‹t$8HƒÄ A^ÃÌÌÌÌÌÌÌÌÌÌÌÌÌÌH‰\$WHƒì H‹ùM…Àu¸W €ë<ƒ: ¸@ €u2ƒz u,zÀ   u#z   FuI‰H‹H‹XH‹Ëÿb§ H‹ÏÿÓ3ÀH‹\$0HƒÄ _ÃÌÌÌÌÌÌÌÌH‹ÄH‰XH‰pH‰xL‰p AWHƒì Hƒ" H‹ñ¹x   L‹úÿj¥ L‹ğH…ÀtTL‹NH‹FL‹FIƒf  Iƒf( Aƒf0 HpÜşÿI‰FM‰NI‰M‰FIƒf8 Aƒfp IN@AÆFh AÇFl   ÿ¸ ëE3öM…öu¿ €ë~‹FpA‰Fp‹F0A‰F0ŠFhAˆFhHƒ~8 tH‹V8IN8H9tèíÿÿH‹N IV èÔ  ‹ø…Àx(H‹v(H‹H‹x@H‹ÏÿZ¦ IV(H‹Îÿ×‹ø…ÀxM‰7ëI‹H‹XH‹Ëÿ6¦ I‹ÎÿÓH‹\$0H‹t$8L‹t$H‹ÇH‹|$@HƒÄ A_ÃÌÌÌÌÌÌÌÌH‹ÄH‰XH‰hH‰pH‰x AVHƒì H‹ñ¹    ÿ5¤ H…Àt"H‹VHƒ` HˆÜşÿH‰PH‰Ç@   Æ@ H‰F H…Àu½ €ë[L‹FH‹VH‹NLN(èİ  ‹è…Àx@H‹~ H‹H‹ZH‹Ëÿ¥ H‹ÏÿÓH‹~(H‹H‹ZH‹Ëÿf¥ H‹ÏÿÓH‹F‹HTƒfp ‰N0H‹\$0H‹t$@H‹|$H‹ÅH‹l$8HƒÄ A^ÃÌÌÌÌÌÌH‰\$H‰l$H‰t$ WHƒì H‹éèŒìÿÿ¾   ;ÆuH‹E ƒx „ï   H‹}(H‹H‹XH‹Ëÿé¤ H‹ÏÿÓ„Àu
-¾   éÈ   H‹}(H‹H‹XXH‹ËÿÂ¤ H‹ÏÿÓ…Ày
-¾   é¡   H‹} Hƒd$8 H‹H‹X0H‹Ëÿ•¤ HT$8H‹ÏÿÓH‹\$8H…ÛusënH‹u(H‹H‹xHH‹Ïÿh¤ H‹ÓH‹Îÿ×„Àt*H‹}(H‹H‹X8H‹ËÿH¤ H‹T$8H‹ÏÿÓöØöƒæúƒÆë¾   H‹\$8H…ÛtH‹H‹yH‹Ïÿ¤ H‹Ëÿ×H‹\$0H‹l$@‹ÆH‹t$HHƒÄ _ÃÌÌÌÌÌÌÌH‰\$H‰t$WHƒì H‹ÙHƒÁ@H‹òÿ¹› HK8H91tH‹ÖèDêÿÿHK@H‹\$0H‹t$8HƒÄ _Hÿ%†› ÌÌÌÌÌÌL‹ÜI‰[I‰kI‰s WAVAWHƒì@H‹ùg H3ÄH‰D$0IƒcÈ ISÈH‹éè üÿÿH‹|$ D‹ø…ÀˆK  H‹×H‹Íè]ÿÿÿ3ÀH‹ÍH‰D$(èşÿÿD‹ğƒø„ç   Aƒş„é   IcÆ€|( …É   A‹ÎÆD(ƒé„’   ÿÉ„€   ÿÉtrÿÉtA¿@ €é‚   H‹u Hƒd$  H‹H‹X0H‹ËÿÔ¢ HT$ H‹ÎÿÓD‹ø…ÀxH‹T$ Lß
-ÿÿH‹ÍèÓ  D‹øH‹\$ H…Ût6H‹H‹pH‹Îÿ’¢ H‹ËÿÖëH‹ÍèË  ëH‹Íè­  ëH‹Íè«   D‹øE…ÿxH‹Íè/ıÿÿD‹ğƒø…!ÿÿÿëA¾   Aƒştƒe0 ë$è²éÿÿƒøuƒe0 H"
-ÿÿH‹ÍDpÿèâ  D‹ø3ÒH‹ÍD‰upèşÿÿH…ÿtH‹H‹XH‹Ëÿø¡ H‹ÏÿÓA‹ÇH‹L$0H3ÌèS> H‹\$hH‹l$pH‹t$xHƒÄ@A_A^_ÃÌÌÌÌÌÌH‰\$H‰t$UWAVH‹ìHƒì0H‹ñE3öèéÿÿƒøu-H‹NHUğDˆuğèFP  D‹ğ…Àˆ˜   €}ğ „…   Hƒeø ëƒøuyH‹FD8p4toL!uøH‹~ H‹H‹X0H‹ËÿK¡ HUøH‹ÏÿÓ…ÀyH‹NHUøèı4  D‹ğ…ÀxH‹UøL'	ÿÿH‹Îè;  D‹ğH‹]øH…Ût H‹H‹xH‹Ïÿû  H‹Ëÿ×ë	H‹N(è/  H‹\$XH‹t$`A‹ÆHƒÄ0A^_]ÃÌÌÌÌÌÌÌÌÌ@USVWATAVAWH‹ìHƒì H‹y(H‹ñE3öH‹H‹XXH‹Ëÿ   H‹ÏÿÓ…À‰Â  L!uP= 	€
+      _this.options.modifiers[name] = _extends({}, Popper.Defaults.modifiers[name] || {}, options.modifiers ? options.modifiers[name] : {});
+    });
+
+    // Refactoring modifiers' list (Object => Array)
+    this.modifiers = Object.keys(this.options.modifiers).map(function (name) {
+      return _extends({
+        name: name
+      }, _this.options.modifiers[name]);
+    })
+    // sort the modifiers by order
+    .sort(function (a, b) {
+      return a.order - b.order;
+    });
+
+    // modifiers have the ability to execute arbitrary code when Popper.js get inited
+    // such code is executed in the same order of its modifier
+    // they could add new properties to their options configuration
+    // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
+    this.modifiers.forEach(function (modifierOptions) {
+      if (modifierOptions.enabled && isFunction(modifierOptions.onLoad)) {
+        modifierOptions.onLoad(_this.reference, _this.popper, _this.options, modifierOptions, _this.state);
+      }
+    });
+
+    // fire the first update to position the popper in the right place
+    this.update();
+
+    var eventsEnabled = this.options.eventsEnabled;
+    if (eventsEnabled) {
+      // setup event listeners, they will take care of update the position in specific situations
+      this.enableEventListeners();
+    }
+
+    this.state.eventsEnabled = eventsEnabled;
+  }
+
+  // We can't use class properties because they don't get listed in the
+  // class prototype and break stuff like Sinon stubs
+
+
+  createClass(Popper, [{
+    key: 'update',
+    value: function update$$1() {
+      return update.call(this);
+    }
+  }, {
+    key: 'destroy',
+    value: function destroy$$1() {
+      return destroy.call(this);
+    }
+  }, {
+    key: 'enableEventListeners',
+    value: function enableEventListeners$$1() {
+      return enableEventListeners.call(this);
+    }
+  }, {
+    key: 'disableEventListeners',
+    value: function disableEventListeners$$1() {
+      return disableEventListeners.call(this);
+    }
+
+    /**
+     * Schedule an update, it will run on the next UI update available
+     * @method scheduleUpdate
+     * @memberof Popper
+     */
+
+
+    /**
+     * Collection of utilities useful when writing custom modifiers.
+     * Starting from version 1.7, this method is available only if you
+     * include `popper-utils.js` before `popper.js`.
+     *
+     * **DEPRECATION**: This way to access PopperUtils is deprecated
+     * and will be removed in v2! Use the PopperUtils module directly instead.
+     * Due to the high instability of the methods contained in Utils, we can't
+     * guarantee them to follow semver. Use them at your own risk!
+     * @static
+     * @private
+     * @type {Object}
+     * @deprecated since version 1.8
+     * @member Utils
+     * @memberof Popper
+     */
+
+  }]);
+  return Popper;
+}();
+
+/**
+ * The `referenceObject` is an object that provides an interface compatible with Popper.js
+ * and lets you use it as replacement of a real DOM node.<br />
+ * You can use this method to position a popper relatively to a set of coordinates
+ * in case you don't have a DOM node to use as reference.
+ *
+ * ```
+ * new Popper(referenceObject, popperNode);
+ * ```
+ *
+ * NB: This feature isn't supported in Internet Explorer 10
+ * @name referenceObject
+ * @property {Function} data.getBoundingClientRect
+ * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
+ * @property {number} data.clientWidth
+ * An ES6 getter that will return the width of the virtual reference element.
+ * @property {number} data.clientHeight
+ * An ES6 getter that will return the height of the virtual reference element.
+ */
+
+
+Popper.Utils = (typeof window !== 'undefined' ? window : global).PopperUtils;
+Popper.placements = placements;
+Popper.Defaults = Defaults;
+
+return Popper;
+
+})));
+//# sourceMappingURL=popper.js.map

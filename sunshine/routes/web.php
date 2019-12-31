@@ -12,9 +12,9 @@
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/gioi-thieu', function() {
     return 'Hello, first route giới thiệu!';
@@ -34,3 +34,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/admin/activate/{nv_ma}', 'Backend\BackendController@activate')->name('activate');
+
+// Route dành cho Frontend
+Route::get('/', 'Frontend\FrontendController@index')->name('frontend.home');
