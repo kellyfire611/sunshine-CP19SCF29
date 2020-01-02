@@ -37,3 +37,7 @@ Route::post('/admin/activate/{nv_ma}', 'Backend\BackendController@activate')->na
 
 // Route dành cho Frontend
 Route::get('/', 'Frontend\FrontendController@index')->name('frontend.home');
+Route::get('/gioi-thieu', 'Frontend\FrontendController@about')->name('frontend.about');
+Route::get('/lien-he', 'Frontend\FrontendController@contact')->name('frontend.contact');
+Route::post('/lien-he/goi-loi-nhan', 'Frontend\FrontendController@sendMailContactForm')->name('frontend.contact.sendMailContactForm');
+Route::get('/san-pham', 'Frontend\FrontendController@product')->name('frontend.product');

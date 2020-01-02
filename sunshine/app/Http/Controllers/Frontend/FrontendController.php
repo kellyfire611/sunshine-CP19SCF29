@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
+use Mail;
+use App\Mail\ContactMailer;
+use App\Loai;
+use App\Mau;
 
 class FrontendController extends Controller
 {
@@ -46,5 +50,58 @@ class FrontendController extends Controller
         }
         $data = $query->get();
         return $data;
+    }
+
+    /**
+     * Action hiển thị view Giới thiệu
+     * GET /about
+     */
+    public function about()
+    {
+        return view('frontend.pages.about');
+    }
+
+    /** * Action hiển thị view Liên hệ * GET /contact */ 
+    public function contact()
+    {
+        return view('frontend.pages.contact');
+    }
+
+    /** 
+     * Action gởi email với các lời nhắn nhận được từ khách hàng 
+     * POST /lien-he/goi-loi-nhan 
+     */ 
+    public function sendMailContactForm(Request $request)
+    {
+        $input = $request->all();
+        Mail::to('hotro.nentangtoituonglai@gmail.com')->send(new ContactMailer($input));
+        return $input;
+    }
+
+    /**
+     * Action hiển thị danh sách Sản phẩm
+     */
+    public function product(Request $request)
+    {
+        // Query tìm danh sách sản phẩm
+        $danhsachsanpham = $this->searchSanPham($request);
+
+        // Query Lấy các hình ảnh liên quan của các Sản phẩm đã được lọc
+        $danhsachhinhanhlienquan = DB::table('cusc_hinhanh')
+                                ->whereIn('sp_ma', $danhsachsanpham->pluck('sp_ma')->toArray())
+                                ->get();
+
+        // Query danh sách Loại
+        $danhsachloai = Loai::all();
+
+        // Query danh sách màu
+        $danhsachmau = Mau::all();
+
+        // Hiển thị view `frontend.index` với dữ liệu truyền vào
+        return view('frontend.pages.product')
+            ->with('danhsachsanpham', $danhsachsanpham)
+            ->with('danhsachhinhanhlienquan', $danhsachhinhanhlienquan)
+            ->with('danhsachmau', $danhsachmau)
+            ->with('danhsachloai', $danhsachloai);
     }
 }
