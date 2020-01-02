@@ -41,3 +41,10 @@ Route::get('/gioi-thieu', 'Frontend\FrontendController@about')->name('frontend.a
 Route::get('/lien-he', 'Frontend\FrontendController@contact')->name('frontend.contact');
 Route::post('/lien-he/goi-loi-nhan', 'Frontend\FrontendController@sendMailContactForm')->name('frontend.contact.sendMailContactForm');
 Route::get('/san-pham', 'Frontend\FrontendController@product')->name('frontend.product');
+
+Route::get('setLocale/{locale}', function ($locale) {
+    if (in_array($locale, Config::get('app.locales'))) {
+      Session::put('locale', $locale);
+    }
+    return redirect()->back();
+})->name('app.setLocale');

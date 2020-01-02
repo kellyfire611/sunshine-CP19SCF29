@@ -17,8 +17,11 @@
                         My Account
                     </a>
 
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <a href="{{ route('app.setLocale', ['locale' => 'en']) }}" class="flex-c-m trans-04 p-lr-25">
                         EN
+                    </a>
+                    <a href="{{ route('app.setLocale', ['locale' => 'vi']) }}" class="flex-c-m trans-04 p-lr-25">
+                        VI
                     </a>
 
                     <a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -47,10 +50,10 @@
                             <a href="{{ route('frontend.product') }}">Sản phẩm</a>
                         </li>
                         <li class="{{ Request::is('gioi-thieu') ? 'active-menu' : '' }}">
-                            <a href="{{ route('frontend.about') }}">Giới thiệu</a>
+                            <a href="{{ route('frontend.about') }}">{{ __('sunshine.pages.about') }}</a>
                         </li>
                         <li class="{{ Request::is('lien-he') ? 'active-menu' : '' }}">
-                            <a href="{{ route('frontend.contact') }}">Liên hệ</a>
+                            <a href="{{ route('frontend.contact') }}">{{ __('sunshine.pages.contact') }}</a>
                         </li>
                     </ul>
                 </div>
